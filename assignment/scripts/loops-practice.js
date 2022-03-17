@@ -13,17 +13,29 @@ for (let i=0; i<4; i++) {
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
+for (let i=0; i<6; i++) { //Changed i<4 to i<6
+  console.log(i);
+}
 
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
+for (let i=3; i<6; i++) { //Innitialized i as 3 instead of 0
+  console.log(i);
+}
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+for(let i=2; i<11; i+=2) { //Changed i++ to i+=2 to make i increase by 2 each loop
+  console.log(i);
+}
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
+for (let i=5; i>-1; i--) {
+  console.log(i);
+}
 
 
 // 2. For of loops  
@@ -32,16 +44,33 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-
+for (i=0; i<stars.length; i++) {
+  console.log(stars[i]);
+}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let s = 0;
+while (s < stars.length) {
+  console.log(stars[s]);
+  s++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let upToFive = 0;
+while (upToFive < 6) {
+  console.log(upToFive);
+  upToFive++;
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let downFromTen = 10;
+while (downFromTen > 4) {
+  console.log(downFromTen);
+  downFromTen--;
+}
